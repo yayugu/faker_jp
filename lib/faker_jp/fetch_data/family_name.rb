@@ -10,10 +10,8 @@ module FakerJP
       end
 
       def fetch
-
-        File.write("#{FakerJP::DATA_DIR}/family_name.json", 'a')
         names = fetch_pages
-        File.write('../../data/family_name.json', JSON.generate(names))
+        File.write("#{FakerJP::DATA_DIR}/family_name.json", JSON.pretty_generate(names))
       end
 
       private
@@ -26,7 +24,6 @@ module FakerJP
           tables = page.parser.css('table')
           names += parse_table(tables[9]).compact # 9, 10あたりに本体データがある
           names += parse_table(tables[10]).compact
-          break
         end
         names
       end
