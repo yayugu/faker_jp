@@ -16,12 +16,14 @@ GEM
       webrobots (>= 0.0.9, < 0.2)
     mime-types (2.6.2)
     mini_portile (0.6.2)
+    minitest (5.5.1)
     net-http-digest_auth (1.4)
     net-http-persistent (2.9.4)
     nokogiri (1.6.6.2)
       mini_portile (~> 0.6.0)
     ntlm-http (0.1.1)
     rake (10.4.2)
+    random_bell (0.1.1)
     unf (0.1.4)
       unf_ext
     unf_ext (0.0.7.1)
@@ -32,4 +34,6 @@ PLATFORMS
 
 DEPENDENCIES
   mechanize
+  minitest
   rake
+  random_bell
