@@ -1,4 +1,6 @@
+require 'faker_jp/entity/address'
 require 'faker_jp/entity/person_name'
+require 'faker_jp/generator/address'
 require 'faker_jp/generator/person_name'
 
 module FakerJP
